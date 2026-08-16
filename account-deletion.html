@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+  Web account-deletion resource — Google Play REQUIRES apps that offer
+  account creation to declare a web URL where users can request account
+  deletion (Data safety form). Canonical URL:
+  https://trackallerg.net/account-deletion.html
+
+  SOURCE OF TRUTH: the app repo's web_compliance/account-deletion.html
+  (TrackAllerg/web_compliance) — edit THERE and copy here; a mirror is also
+  deployed to Firebase Hosting (trackallerg-a51.web.app).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrackAllerg — Delete your account</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #1a1a1a; }
+  h1 { color: #1B4D2A; } h2 { color: #387C44; margin-top: 2rem; }
+  .box { background: #f0f5f1; border-radius: 12px; padding: 1rem 1.25rem; }
+</style>
+</head>
+<body>
+<h1>Delete your TrackAllerg account and data</h1>
+
+<h2>Fastest way: in the app</h2>
+<div class="box">
+<p>Open TrackAllerg → <strong>Settings → Data → Delete account</strong>.
+You will re-authenticate with Google, then all your diary data and your
+account are permanently deleted from our servers. This is immediate and
+irreversible.</p>
+</div>
+
+<h2>Without access to the app</h2>
+<p>Email <strong>hi@trackallerg.net</strong> from the Google account
+email you used to sign in, with the subject "Delete my TrackAllerg account".
+Deletion is completed within 30 days and covers: all diary entries (symptoms,
+medicines, notes, locations, environment snapshots) and the account record
+itself.</p>
+
+<h2>What is deleted, what is kept</h2>
+<ul>
+  <li><strong>Deleted:</strong> everything stored server-side — there is no
+  server-side data other than your diary and account record.</li>
+  <li><strong>Kept:</strong> nothing. Anonymous crash reports (if you had
+  crash reporting enabled) contain no account identifier and cannot be linked
+  to you; they expire per Firebase Crashlytics retention (90 days).</li>
+  <li>Data on your own device (guest-mode data or cached copies) is under
+  your control: uninstalling the app or Settings → Delete removes it.</li>
+</ul>
+</body>
+</html>

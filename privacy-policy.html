@@ -24,7 +24,7 @@
 </head>
 <body>
 <h1>TrackAllerg — Privacy Policy</h1>
-<p><em>Last updated: 2026-08-15</em></p>
+<p><em>Last updated: 2026-08-30</em></p>
 
 <h2>What TrackAllerg is</h2>
 <p>TrackAllerg is a personal allergy diary for Android. You record symptoms,
@@ -34,8 +34,11 @@ device and provides no medical advice.</p>
 
 <h2>Data you enter</h2>
 <p>Symptom severities, medicines and doses, treatments, notes, sleep location,
-time outdoors, and a location per day. This is health-related data. It is
-stored:</p>
+time outdoors, and a location per day, plus any custom treatment or
+sleeping-place names you add. The weather, pollen and air-quality values
+fetched for each tracked day (and the elevation of that day's location) are
+saved together with the entry so your history stays complete offline. This
+is health-related data. It is stored:</p>
 <ul>
   <li><strong>Without an account ("guest mode", the default):</strong> only on
   your device. It is included in Android's device backup (your Google account
@@ -56,26 +59,48 @@ location access by picking a place manually.</p>
 <h2>Third-party services</h2>
 <ul>
   <li><strong>Open-Meteo</strong> (open-meteo.com): receives coordinates to
-  return weather and air-quality data. No account identifiers are sent.</li>
+  return weather, air-quality and pollen-forecast data (the measured pollen
+  values come from MeteoSwiss, below). No account identifiers are sent.</li>
   <li><strong>MeteoSwiss open data</strong> (data.geo.admin.ch): pollen
   measurements are downloaded per monitoring station; your coordinates are
   not sent (the app picks the nearest station on the device).</li>
   <li><strong>Google Firebase</strong>: authentication (only if you sign in)
-  and data storage (see above). Crash reporting (Firebase Crashlytics) is
-  used only if you keep it enabled in Settings; crash reports are anonymous —
-  no user identifier is attached and identifiers, coordinates and free text
-  are scrubbed before upload.</li>
+  and data storage (see above). When you sign in with Google, the app
+  receives your Google account's email address, display name and
+  profile-picture URL; they are used only to identify your account and show
+  it in Settings (the picture is loaded from Google's servers) and are
+  deleted with the account. The app also uses Firebase App Check with Google
+  Play Integrity: when it communicates with Firebase, Google Play sends an
+  attestation of the app and device to Google to protect the backend from
+  abuse — no diary data is involved. Crash reporting (Firebase Crashlytics)
+  is used only if you keep it enabled in Settings; crash reports are
+  anonymous — no user identifier is attached, your entries, notes, medicine
+  names and locations are never included, and identifiers and coordinates
+  are additionally scrubbed before upload.</li>
 </ul>
 <p>TrackAllerg contains <strong>no advertising and no analytics SDKs</strong>.</p>
 
 <h2>Data deletion</h2>
-<p>In the app: Settings → Data → Delete. Guest mode deletes all local data;
-with an account, deletion removes your cloud data and your account. You can
-also request deletion without the app — see the
+<p>In the app: Settings → Data → Delete. In guest mode this permanently
+removes all diary data from the device: every entry, your custom catalog
+names, your saved home location, your pollen-station choice and the cached
+weather, pollen and air-quality data (app settings such as language and
+reminder time are kept; uninstalling the app removes everything). With an
+account, deletion removes your cloud data and your account and performs the
+same local wipe on that device; other devices you used with the account keep
+their offline copy until the app is uninstalled there. You can also request
+deletion without the app — see the
 <a href="account-deletion.html">account deletion page</a>.</p>
 
 <h2>Data export</h2>
 <p>Settings → Data → Export produces a CSV of all your entries at any time.</p>
+
+<h2>Data retention</h2>
+<p>Cloud data is kept until you delete it or your account — there is no
+automatic expiry. Data on your device is kept until you delete it in the app
+or uninstall the app; the Android device backup of guest data follows your
+device's backup settings. Anonymous crash reports are kept by Firebase
+Crashlytics for 90 days.</p>
 
 <h2>Contact</h2>
 <p>Questions or requests: <strong>hi@trackallerg.net</strong></p>

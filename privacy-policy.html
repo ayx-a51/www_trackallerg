@@ -1,108 +1,119 @@
 <!DOCTYPE html>
 <!--
-  Privacy policy for TrackAllerg — Google Play requires a hosted privacy
-  policy URL for health apps. Canonical URL: https://trackallerg.net/privacy-policy.html
+  Datenschutzerklärung für TrackAllerg — Google Play verlangt für
+  Gesundheits-Apps eine gehostete Privacy-Policy-URL.
+  Kanonische URL: https://trackallerg.net/privacy-policy.html
 
-  SOURCE OF TRUTH: this file (TrackAllerg/web_compliance/privacy-policy.html).
-  Edit here, then copy to the public-site repo (www_trackallerg, GitHub Pages)
-  and push; `firebase deploy --only hosting` refreshes the mirror at
-  trackallerg-a51.web.app.
+  Deutsche Fassung (kanonisch seit 2026-08-30); das englische Original
+  liegt unter privacy-policy-en.html. Achtung: die Master-Datei im
+  App-Repo (TrackAllerg/web_compliance/privacy-policy.html) ist weiterhin
+  englisch — inhaltliche Änderungen dort müssen hier nachgezogen werden.
 
-  REVIEW BEFORE PUBLISHING: this is a template written to match the app's
-  actual behavior as implemented; the developer must review it and is
-  responsible for its legal accuracy (Swiss nFADP / GDPR review recommended).
+  VOR VERÖFFENTLICHUNG PRÜFEN: Vorlage entsprechend dem tatsächlichen
+  App-Verhalten; die rechtliche Richtigkeit verantwortet der Entwickler
+  (Prüfung nach revDSG / DSGVO empfohlen).
 -->
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TrackAllerg — Privacy Policy</title>
+<title>TrackAllerg — Datenschutzerklärung</title>
 <style>
   body { font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #1a1a1a; }
   h1 { color: #134E4A; } h2 { color: #0D9488; margin-top: 2rem; }
 </style>
 </head>
 <body>
-<h1>TrackAllerg — Privacy Policy</h1>
-<p><em>Last updated: 2026-08-30</em></p>
+<h1>TrackAllerg — Datenschutzerklärung</h1>
+<p><em>Stand: 2026-08-30</em></p>
 
-<h2>What TrackAllerg is</h2>
-<p>TrackAllerg is a personal allergy diary for Android. You record symptoms,
-medicines and notes; the app fetches weather, pollen and air-quality data for
-your location to display alongside your entries. TrackAllerg is not a medical
-device and provides no medical advice.</p>
+<h2>Was TrackAllerg ist</h2>
+<p>TrackAllerg ist ein persönliches Allergie-Tagebuch für Android. Du erfasst
+Symptome, Medikamente und Notizen; die App ruft Wetter-, Pollen- und
+Luftqualitätsdaten für deinen Standort ab und zeigt sie neben deinen
+Einträgen an. TrackAllerg ist kein Medizinprodukt und gibt keine
+medizinischen Ratschläge.</p>
 
-<h2>Data you enter</h2>
-<p>Symptom severities, medicines and doses, treatments, notes, sleep location,
-time outdoors, and a location per day, plus any custom treatment or
-sleeping-place names you add. The weather, pollen and air-quality values
-fetched for each tracked day (and the elevation of that day's location) are
-saved together with the entry so your history stays complete offline. This
-is health-related data. It is stored:</p>
+<h2>Daten, die du eingibst</h2>
+<p>Symptomstärken, Medikamente und Dosen, Behandlungen, Notizen, Schlafort,
+Zeit im Freien und ein Standort pro Tag, dazu selbst angelegte Namen für
+Behandlungen und Schlaforte. Die für jeden erfassten Tag abgerufenen
+Wetter-, Pollen- und Luftqualitätswerte (und die Höhe des Tagesstandorts)
+werden zusammen mit dem Eintrag gespeichert, damit deine Historie offline
+vollständig bleibt. Das sind gesundheitsbezogene Daten. Sie werden
+gespeichert:</p>
 <ul>
-  <li><strong>Without an account ("guest mode", the default):</strong> only on
-  your device. It is included in Android's device backup (your Google account
-  backup) if you have device backup enabled. We have no access to it.</li>
-  <li><strong>With a Google account sign-in (optional):</strong> in Google
-  Firebase Cloud Firestore (region: Zürich, Switzerland), under your account,
-  encrypted in transit, accessible only by you (enforced by security rules).
-  We do not read, share or sell it.</li>
+  <li><strong>Ohne Konto («Gastmodus», die Voreinstellung):</strong> nur auf
+  deinem Gerät. Sie sind Teil des Android-Gerätebackups (Backup über dein
+  Google-Konto), falls du das Gerätebackup aktiviert hast. Wir haben keinen
+  Zugriff darauf.</li>
+  <li><strong>Mit Google-Anmeldung (optional):</strong> in Google Firebase
+  Cloud Firestore (Region: Zürich, Schweiz), unter deinem Konto,
+  verschlüsselt übertragen und nur für dich zugänglich (durch
+  Sicherheitsregeln erzwungen). Wir lesen, teilen oder verkaufen deine Daten
+  nicht.</li>
 </ul>
 
-<h2>Location</h2>
-<p>Your approximate (city-level) location is used only to request weather,
-pollen and air-quality data from the services below, and a coarse coordinate
-is stored in your own diary entries. Location is never shared with anyone
-else and is never used for advertising. You can use the app entirely without
-location access by picking a place manually.</p>
+<h2>Standort</h2>
+<p>Dein ungefährer Standort (auf Stadtebene) wird nur verwendet, um Wetter-,
+Pollen- und Luftqualitätsdaten bei den unten genannten Diensten abzurufen;
+eine grobe Koordinate wird in deinen eigenen Tagebucheinträgen gespeichert.
+Der Standort wird nie mit Dritten geteilt und nie für Werbung verwendet. Du
+kannst die App auch ganz ohne Standortzugriff nutzen, indem du einen Ort
+manuell wählst.</p>
 
-<h2>Third-party services</h2>
+<h2>Dienste von Drittanbietern</h2>
 <ul>
-  <li><strong>Open-Meteo</strong> (open-meteo.com): receives coordinates to
-  return weather, air-quality and pollen-forecast data (the measured pollen
-  values come from MeteoSwiss, below). No account identifiers are sent.</li>
-  <li><strong>MeteoSwiss open data</strong> (data.geo.admin.ch): pollen
-  measurements are downloaded per monitoring station; your coordinates are
-  not sent (the app picks the nearest station on the device).</li>
-  <li><strong>Google Firebase</strong>: authentication (only if you sign in)
-  and data storage (see above). When you sign in with Google, the app
-  receives your Google account's email address, display name and
-  profile-picture URL; they are used only to identify your account and show
-  it in Settings (the picture is loaded from Google's servers) and are
-  deleted with the account. The app also uses Firebase App Check with Google
-  Play Integrity: when it communicates with Firebase, Google Play sends an
-  attestation of the app and device to Google to protect the backend from
-  abuse — no diary data is involved. Crash reporting (Firebase Crashlytics)
-  is used only if you keep it enabled in Settings; crash reports are
-  anonymous — no user identifier is attached, your entries, notes, medicine
-  names and locations are never included, and identifiers and coordinates
-  are additionally scrubbed before upload.</li>
+  <li><strong>Open-Meteo</strong> (open-meteo.com): erhält Koordinaten und
+  liefert Wetter-, Luftqualitäts- und Pollenprognosedaten (die gemessenen
+  Pollenwerte stammen von MeteoSchweiz, siehe unten). Es werden keine
+  Kontokennungen übermittelt.</li>
+  <li><strong>MeteoSchweiz Open Data</strong> (data.geo.admin.ch):
+  Pollenmesswerte werden pro Messstation heruntergeladen; deine Koordinaten
+  werden nicht übermittelt (die App wählt die nächstgelegene Station auf dem
+  Gerät aus).</li>
+  <li><strong>Google Firebase</strong>: Authentifizierung (nur bei Anmeldung)
+  und Datenspeicherung (siehe oben). Bei der Google-Anmeldung erhält die App
+  E-Mail-Adresse, Anzeigenamen und Profilbild-URL deines Google-Kontos; sie
+  dienen nur dazu, dein Konto zu identifizieren und in den Einstellungen
+  anzuzeigen (das Bild wird von Googles Servern geladen), und werden mit dem
+  Konto gelöscht. Die App nutzt ausserdem Firebase App Check mit Google Play
+  Integrity: Bei der Kommunikation mit Firebase sendet Google Play eine
+  Bestätigung von App und Gerät an Google, um das Backend vor Missbrauch zu
+  schützen — Tagebuchdaten sind daran nicht beteiligt. Absturzberichte
+  (Firebase Crashlytics) werden nur verwendet, wenn du sie in den
+  Einstellungen aktiviert lässt; Absturzberichte sind anonym — es wird keine
+  Nutzerkennung angehängt, deine Einträge, Notizen, Medikamentennamen und
+  Standorte sind nie enthalten, und Kennungen und Koordinaten werden vor dem
+  Upload zusätzlich entfernt.</li>
 </ul>
-<p>TrackAllerg contains <strong>no advertising and no analytics SDKs</strong>.</p>
+<p>TrackAllerg enthält <strong>keine Werbung und keine Analyse-SDKs</strong>.</p>
 
-<h2>Data deletion</h2>
-<p>In the app: Settings → Data → Delete. In guest mode this permanently
-removes all diary data from the device: every entry, your custom catalog
-names, your saved home location, your pollen-station choice and the cached
-weather, pollen and air-quality data (app settings such as language and
-reminder time are kept; uninstalling the app removes everything). With an
-account, deletion removes your cloud data and your account and performs the
-same local wipe on that device; other devices you used with the account keep
-their offline copy until the app is uninstalled there. You can also request
-deletion without the app — see the
-<a href="account-deletion.html">account deletion page</a>.</p>
+<h2>Datenlöschung</h2>
+<p>In der App: Einstellungen → Daten → Löschen. Im Gastmodus entfernt das
+dauerhaft alle Tagebuchdaten vom Gerät: jeden Eintrag, deine selbst
+angelegten Katalognamen, deinen gespeicherten Heimstandort, deine gewählte
+Pollenstation und die zwischengespeicherten Wetter-, Pollen- und
+Luftqualitätsdaten (App-Einstellungen wie Sprache und Erinnerungszeit
+bleiben erhalten; das Deinstallieren der App entfernt alles). Mit Konto
+löscht der Vorgang deine Cloud-Daten und dein Konto und führt auf dem Gerät
+dieselbe lokale Löschung aus; andere Geräte, auf denen du das Konto genutzt
+hast, behalten ihre Offline-Kopie, bis die App dort deinstalliert wird. Du
+kannst die Löschung auch ohne die App anfordern — siehe die Seite
+<a href="account-deletion.html">Konto löschen</a>.</p>
 
-<h2>Data export</h2>
-<p>Settings → Data → Export produces a CSV of all your entries at any time.</p>
+<h2>Datenexport</h2>
+<p>Einstellungen → Daten → Export erzeugt jederzeit eine CSV-Datei mit allen
+deinen Einträgen.</p>
 
-<h2>Data retention</h2>
-<p>Cloud data is kept until you delete it or your account — there is no
-automatic expiry. Data on your device is kept until you delete it in the app
-or uninstall the app; the Android device backup of guest data follows your
-device's backup settings. Anonymous crash reports are kept by Firebase
-Crashlytics for 90 days.</p>
+<h2>Datenaufbewahrung</h2>
+<p>Cloud-Daten bleiben gespeichert, bis du sie oder dein Konto löschst — es
+gibt keinen automatischen Ablauf. Daten auf deinem Gerät bleiben, bis du sie
+in der App löschst oder die App deinstallierst; das Android-Gerätebackup der
+Gastdaten folgt den Backup-Einstellungen deines Geräts. Anonyme
+Absturzberichte werden von Firebase Crashlytics 90 Tage aufbewahrt.</p>
 
-<h2>Contact</h2>
-<p>Questions or requests: <strong>hi@trackallerg.net</strong></p>
+<h2>Kontakt</h2>
+<p>Fragen oder Anliegen: <strong>hi@trackallerg.net</strong></p>
 </body>
 </html>
